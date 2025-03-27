@@ -40,15 +40,15 @@ B = Ts*B
 D = Ts*D
 d = Ts*d
 
-Q = np.array([[10, 0, 0, 0], [0, 3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
-QN = np.array([[10, 0, 0, 0], [0, 3, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
+Q = np.array([[10, 0, 0, 0], [0, 3, 0, 0], [0, 0, 6, 0], [0, 0, 0, 6]])
+QN = 100*np.array([[10, 0, 0, 0], [0, 3, 0, 0], [0, 0, 6, 0], [0, 0, 0, 6]])
 
 R = np.array([[1]])
 
 qp_weight_gamma,qp_weight_lambda = 100,100
 pj_weight_gamma,pj_weight_lambda = 1,1
 
-rho = 1
+rho = 5
 
 G=np.eye(num_lambda)
 
